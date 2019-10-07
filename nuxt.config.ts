@@ -36,6 +36,7 @@ module.exports = {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
+    '@nuxt/typescript-build',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
   ],
@@ -51,6 +52,6 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {}
+    extend(config: any, ctx: any) {}
   }
 };
