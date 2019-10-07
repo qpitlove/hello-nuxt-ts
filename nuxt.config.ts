@@ -50,18 +50,6 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        // config.module이 null일 수 있어서 타입 체크가 필요합니다.
-        if (!config.module) config.module = {rules: []}
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
+    extend(config, ctx) {}
   }
 };
