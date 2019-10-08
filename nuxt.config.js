@@ -52,6 +52,6 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config: any, ctx: any) {}
+    extend(config, ctx) {}
   }
 };
